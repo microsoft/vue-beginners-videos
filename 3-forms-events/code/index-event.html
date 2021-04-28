@@ -1,0 +1,23 @@
+<html>
+
+<head>
+  <style>
+    .container {
+      padding: 10px;
+      background-color: red;
+    }
+    
+  </style>
+</head>
+  <div id="app">
+    <!-- stop, capture, once, .capture.stop -->
+    <div class="container" @click.capture.stop="outerClick">
+      <button @click="handleClick">Collect coins</button>
+    </div>
+    <div>
+      Coins {{coins}}
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="index-event.js"></script>
+</html>

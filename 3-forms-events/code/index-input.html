@@ -1,0 +1,45 @@
+<html>
+
+<head>
+  <style>
+    .rows {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .row {
+    border: solid 1px #888;
+    padding: 5px 10px;
+    box-shadow: 0 0 5px #888;
+    align-content: center;
+    margin: 10px;
+    width: 370px;
+    display: grid;
+  }
+  </style>
+</head>
+  <div id="app">
+    <div class="rows" >
+      <div class="row">
+      {{title}}
+      <input v-model="person.name" placeholder="a name">
+      Value of name {{person.name}}
+      </div>
+      <div class="row">
+        <select v-model="selectedType">
+          <option value="">Select a shipping type</option>
+          <option 
+            :key="type.name" 
+            :title="type.name"
+            :value="type.name"
+            v-for="type in shippingTypes">{{type.name}}
+          </option>
+        </select>
+      Selected shipping type {{selectedType}}
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="index-input.js"></script>
+</html>

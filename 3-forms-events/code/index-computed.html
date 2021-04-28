@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <style>
+      .container {
+        border: solid 1px #777;
+        border-radius: 5px;
+        padding: 5px;
+      }
+
+      .calculator {
+        padding: 20px;
+        border: solid 1px gray;
+        box-shadow: 0 0 5px gray;
+        margin: 20px;
+      }
+    </style>
+  </head>
+    <div id="app">
+      <h2>Shipping</h2>
+      <div>
+        <input type="text" placeholder="name" v-model="name">
+      </div>
+      <div>
+        <input type="text" placeholder="address" v-model="address">
+      </div>
+      <div>
+        <input type="text" placeholder="city" v-model="city">
+      </div>
+      <div>
+        <input type="text" placeholder="country" v-model="country">
+      </div>
+
+      <h3>Address sticker</h3>
+      <div class="container">
+        {{fullAddress}}
+      </div>
+
+      <div class="calculator">
+        <h2>Calculator</h2>
+        <input type="number" v-model="lhs" type="text"> + <input type="number" v-model="rhs" type="text">
+        Sum {{sum}}
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="index-computed.js"></script>
+</html>
