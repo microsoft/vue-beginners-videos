@@ -5,5 +5,5 @@ Users typically modify data in a web application by using a form. Because Vue.js
 ## Resources
 
 - [Sample code](./code)
-- [Microsoft Learn: Work with data and events in Vue.js](https://docs.microsoft.com/en-us/learn/modules/vue-data-events/)
+- [Microsoft Learn: Work with data and events in Vue.js](https://docs.microsoft.com/learn/modules/vue-data-events/)
 - [videos](link)

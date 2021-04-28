@@ -30,7 +30,7 @@ You can add the Vue core library to any page and immediately start creating dyna
 If you want to learn more about Vue.js, here's some places to get started:
 
 - [Videos](link)
-- [Microsoft Learn: Taking your first steps with Vue.js](https://docs.microsoft.com/en-us/learn/paths/vue-first-steps/)
+- [Microsoft Learn: Taking your first steps with Vue.js](https://docs.microsoft.com/learn/paths/vue-first-steps/)
 - [Vue.js](https://v3.vuejs.org/)
 
 ### Software

@@ -7,5 +7,5 @@ By using Vue.js, you can do these things through a variety of directives. And do
 ## Resources
 
 - [Sample code](./code)
-- [Microsoft Learn: Dynamic page displays with Vue.js](https://docs.microsoft.com/en-us/learn/modules/vue-dynamic-rendering/)
+- [Microsoft Learn: Dynamic page displays with Vue.js](https://docs.microsoft.com/learn/modules/vue-dynamic-rendering/)
 - [videos](link)

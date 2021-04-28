@@ -9,5 +9,5 @@ Fortunately, Vue also provides a command-line interface (CLI) that you can use t
 ## Resources
 
 - [Sample code](./code)
-- [Microsoft Learn: Getting started with Vue CLI and single-file components in Vue.js](https://docs.microsoft.com/en-us/learn/modules/vue-cli-components/)
+- [Microsoft Learn: Getting started with Vue CLI and single-file components in Vue.js](https://docs.microsoft.com/learn/modules/vue-cli-components/)
 - [videos](link)

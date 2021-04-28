@@ -9,5 +9,5 @@ You can add the Vue core library to any page and immediately start creating dyna
 ## Resources
 
 - [Sample code](./code)
-- [Microsoft Learn: Getting started with Vue.js](https://docs.microsoft.com/en-us/learn/modules/vue-get-started/)
+- [Microsoft Learn: Getting started with Vue.js](https://docs.microsoft.com/learn/modules/vue-get-started/)
 - [videos](link)
