@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog pictures</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Available cruises</h1>
+    <div id="app">
+
+        <ul>
+            <li v-for="(cruise, index) in cruises" :key="index">
+                {{ cruise.name }}
+                <button v-show="cruise.seatsAvailable">
+                    <span v-if="cruise.earlyBirdAvailable">Book early bird!</span>
+                    <span v-else>Book now!</span>
+                </button>    
+            </li>
+        </ul>
+    </div>
+    <!-- add in Vue.js -->
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <script>
+        const App = {
+            data() {
+                return {
+                    cruises: [
+                        {
+                            seatsAvailable: true,
+                            earlyBirdAvailable: false,
+                            name: 'Cruise to the moon'
+                        },
+                        {
+                            seatsAvailable: true,
+                            earlyBirdAvailable: true,
+                            name: 'Cruise to Mars'
+                        },
+                        {
+                            seatsAvailable: false,
+                            earlyBirdAvailable: false,
+                            name: 'Cruise to the asteroid belt'
+                        }
+                    ]
+                }
+            }
+        }
+        Vue.createApp(App).mount('#app')
+    </script>
+</body>
+</html>

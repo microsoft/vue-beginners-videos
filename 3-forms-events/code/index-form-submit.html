@@ -1,0 +1,30 @@
+<html>
+
+<head>
+  <style>
+    .rows {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .row {
+    border: solid 1px #888;
+    padding: 5px 10px;
+    box-shadow: 0 0 5px #888;
+    align-content: center;
+    margin: 10px;
+    width: 370px;
+    display: grid;
+  }
+  </style>
+</head>
+  <div id="app">
+    <form name="form" @submit.prevent="handleSubmit" >
+      <input v-model="name" name="name" type="text" required>
+      <button>Submit</button>
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="index-form-submit.js"></script>
+</html>

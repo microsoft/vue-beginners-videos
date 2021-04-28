@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="app">
+        <section :class="messageStyle">
+            {{ message }}
+        </section>
+        <br />
+        <img 
+            v-bind:src="imageSource"
+            v-bind:alt="imageAlt"
+        />
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        const App = {
+            data() {
+                return {
+                    message: 'Dog pictures',
+                    imageSource: 'images/sammy-bath.png',
+                    imageAlt: 'Cute dog who clearly does not enjoy bath time',
+                    messageStyle: {
+                        important: false
+                    }
+                }
+            }
+        }
+        Vue.createApp(App).mount('#app')
+    </script>
+</body>
+</html>
